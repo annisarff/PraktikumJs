@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annisa RIsyafa Febriyanti | 20190140037</title>
+</head>
+<body>
+    <div class="atas">
+        <h2> Hari ini tangggal</h2>
+        <p id="tanggal"></p>
+        <h2>Hari ini jam</h2>
+        <p id ="jm"></p>
+        <script>
+            var today = new Date();
+            var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            document.getElementById("tanggal").innerHTML = date;
+        </script>
+        <script>
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            document.getElementById("jm").innerHTML = time;
+        </script>
+        <script src="tugas_js.js"></script>
+    </div>
+</body>
+</html> 
